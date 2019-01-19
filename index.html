@@ -40,11 +40,25 @@
                 throw error;
             });
 
-        _get('cfdc.json')
-            .then(resp => {
-                console.log(resp.data);
-                console.log(resp.headers.get('cf-ray').split('-'))
-            })
+        let CFDC = {
+            data: [],
+            current: ``,
+            getInfo: () => {
+                _get('cfdc.json')
+                    .then(resp => {
+                        CFDC.data = resp.data;
+                        CFDC.current = resp.headers.get('cf-ray').split('-')[1];
+                        return resp;
+                    })
+                    .then(resp => {
+                        let dcInfo = CFDC.data[CFDC.current];
+                        let html = `${CFDC.current}<br>${dcInfo.name}<br>${dcInfo.cnName}`;
+                        document.getElementById('cfdc-info').innerHTML = html;
+                    })
+            }
+        };
+
+        CFDC.getInfo()
     </script>
 </body>
 
