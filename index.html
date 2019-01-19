@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" type="image/ico" href="https://cdn.jsdelivr.net/npm/skx@0.0.1">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,minimal-ui">
+    <title>Cloudflare Data Center - Sukka's Lab</title>
+    <style>
+        body {
+            padding: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Cloudflare Data Center</h1>
+    <div id="cfdc-info"></div>
+    <script>
+        const _get = (url) =>
+            fetch(url, {
+                method: 'GET',
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            }).then(resp => Promise.all([resp.ok, resp.status, resp.json(), resp.headers])
+            ).then(([ok, status, json, headers]) => {
+                if (ok) {
+                    let data = {
+                        ok,
+                        status,
+                        data: json,
+                        headers
+                    }
+                    return data;
+                } else {
+                    throw new Error(JSON.stringify(json.error));
+                }
+            }).catch(error => {
+                throw error;
+            });
+
+        _get('cfdc.json')
+            .then(resp => {
+                console.log(resp.data);
+                console.log(resp.headers.get('cf-ray').split('-'))
+            })
+    </script>
+</body>
+
+</html>

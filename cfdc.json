@@ -1,0 +1,659 @@
+
+{
+    "AMS": {
+        "name": "Amsterdam, Netherlands",
+        "cnName": "荷兰阿姆斯特丹"
+    },
+    "ATH": {
+        "name": "Athens, Greece",
+        "cnName": "希腊雅典"
+    },
+    "BCN": {
+        "name": "Barcelona, Spain",
+        "cnName": "西班牙巴塞罗那"
+    },
+    "BEG": {
+        "name": "Belgrade, Serbia",
+        "cnName": "塞尔维亚贝尔格莱德"
+    },
+    "TXL": {
+        "name": "Berlin, Germany",
+        "cnName": "德国柏林"
+    },
+    "BRU": {
+        "name": "Brussels, Belgium",
+        "cnName": "比利时布鲁塞尔"
+    },
+    "OTP": {
+        "name": "Bucharest, Romania",
+        "cnName": "罗马尼亚布加勒斯特"
+    },
+    "BUD": {
+        "name": "Budapest, Hungary",
+        "cnName": "匈牙利布达佩斯特"
+    },
+    "KIV": {
+        "name": "Chișinău, Moldova",
+        "cnName": "摩尔多瓦基希讷乌"
+    },
+    "CPH": {
+        "name": "Copenhagen, Denmark",
+        "cnName": "丹麦哥本哈根"
+    },
+    "DUB": {
+        "name": "Dublin, Ireland",
+        "cnName": "爱尔兰都柏林"
+    },
+    "DUS": {
+        "name": "Düsseldorf, Germany",
+        "cnName": "德国杜塞尔多夫"
+    },
+    "EDI": {
+        "name": "Edinburgh, United Kingdom",
+        "cnName": "苏格兰爱丁堡"
+    },
+    "FRA": {
+        "name": "Frankfurt, Germany",
+        "cnName": "德国法兰克福"
+    },
+    "HAM": {
+        "name": "Hamburg, Germany",
+        "cnName": "德国汉堡"
+    },
+    "HEL": {
+        "name": "Helsinki, Finland",
+        "cnName": "芬兰赫尔辛基"
+    },
+    "IST": {
+        "name": "Istanbul, Turkey",
+        "cnName": "土耳其伊斯坦布尔"
+    },
+    "KBP": {
+        "name": "Kiev, Ukraine",
+        "cnName": "乌克兰基辅"
+    },
+    "LIS": {
+        "name": "Lisbon, Portugal",
+        "cnName": "葡萄牙里斯本"
+    },
+    "LHR": {
+        "name": "London, United Kingdom",
+        "cnName": "英国伦敦"
+    },
+    "LUX": {
+        "name": "Luxembourg City, Luxembourg",
+        "cnName": "卢森堡"
+    },
+    "MAD": {
+        "name": "Madrid, Spain",
+        "cnName": "西班牙马德里"
+    },
+    "MAN": {
+        "name": "Manchester, United Kingdom",
+        "cnName": "英国曼彻斯特"
+    },
+    "MRS": {
+        "name": "Marseille, France",
+        "cnName": "法国马赛"
+    },
+    "MXP": {
+        "name": "Milan, Italy",
+        "cnName": "意大利米兰"
+    },
+    "DME": {
+        "name": "Moscow, Russia",
+        "cnName": "俄罗斯莫斯科"
+    },
+    "MUC": {
+        "name": "Munich, Germany",
+        "cnName": "德国慕尼黑"
+    },
+    "OSL": {
+        "name": "Oslo, Norway",
+        "cnName": "挪威奥斯陆"
+    },
+    "CDG": {
+        "name": "Paris, France",
+        "cnName": "法国巴黎"
+    },
+    "PRG": {
+        "name": "Prague, Czech Republic",
+        "cnName": "捷克布拉格"
+    },
+    "KEF": {
+        "name": "Reykjavík, Iceland",
+        "cnName": "冰岛雷克雅未克"
+    },
+    "RIX": {
+        "name": "Riga, Latvia",
+        "cnName": "拉脱维亚里加"
+    },
+    "FCO": {
+        "name": "Rome, Italy",
+        "cnName": "意大利罗马"
+    },
+    "LED": {
+        "name": "Saint Petersburg, Russia",
+        "cnName": "俄罗斯圣彼得堡"
+    },
+    "SOF": {
+        "name": "Sofia, Bulgaria",
+        "cnName": "保加利亚索菲亚"
+    },
+    "ARN": {
+        "name": "Stockholm, Sweden",
+        "cnName": "瑞典斯德哥尔摩"
+    },
+    "TLL": {
+        "name": "Tallinn, Estonia",
+        "cnName": "爱沙尼亚塔林"
+    },
+    "VIE": {
+        "name": "Vienna, Austria",
+        "cnName": "奥地利维也纳"
+    },
+    "VNO": {
+        "name": "Vilnius, Lithuania",
+        "cnName": "立陶宛维尔纽斯"
+    },
+    "WAW": {
+        "name": "Warsaw, Poland",
+        "cnName": "波兰华沙"
+    },
+    "ZAG": {
+        "name": "Zagreb, Croatia",
+        "cnName": "克罗地亚萨格勒布"
+    },
+    "ZRH": {
+        "name": "Zürich, Switzerland",
+        "cnName": "瑞士苏黎世"
+    },
+    "CAI": {
+        "name": "Cairo, Egypt",
+        "cnName": "埃及开罗"
+    },
+    "CMN": {
+        "name": "Casablanca, Morocco",
+        "cnName": "摩洛哥卡萨布兰卡"
+    },
+    "CPT": {
+        "name": "Cape Town, South Africa",
+        "cnName": "南非开普敦"
+    },
+    "JIB": {
+        "name": "Djibouti City, Djibouti",
+        "cnName": "吉布提"
+    },
+    "DUR": {
+        "name": "Durban, South Africa",
+        "cnName": "南非德班"
+    },
+    "JNB": {
+        "name": "Johannesburg, South Africa",
+        "cnName": "南非约翰内斯堡"
+    },
+    "LOS": {
+        "name": "Lagos, Nigeria",
+        "cnName": "尼日利亚拉各斯"
+    },
+    "LAD": {
+        "name": "Luanda, Angola",
+        "cnName": "安哥拉罗安达"
+    },
+    "MBA": {
+        "name": "Mombasa, Kenya",
+        "cnName": "肯尼亚蒙巴萨"
+    },
+    "MRU": {
+        "name": "Port Louis, Mauritius",
+        "cnName": "毛里求斯路易港"
+    },
+    "RUN": {
+        "name": "Réunion, France",
+        "cnName": "法属留尼汪岛"
+    },
+    "BKK": {
+        "name": "Bangkok, Thailand",
+        "cnName": "泰国曼谷"
+    },
+    "CEB": {
+        "name": "Cebu, Philippines",
+        "cnName": "菲律宾宿务省"
+    },
+    "CTU": {
+        "name": "Chengdu, China",
+        "cnName": "中国四川成都"
+    },
+    "MAA": {
+        "name": "Chennai, India",
+        "cnName": "印度金奈"
+    },
+    "CMB": {
+        "name": "Colombo, Sri Lanka",
+        "cnName": "斯里兰卡科伦坡"
+    },
+    "SZX": {
+        "name": "Dongguan, China",
+        "cnName": "中国广东东莞"
+    },
+    "FUO": {
+        "name": "Foshan, China",
+        "cnName": "中国广东佛山"
+    },
+    "FOC": {
+        "name": "Fuzhou, China",
+        "cnName": "中国福建福州"
+    },
+    "CAN": {
+        "name": "Guangzhou, China",
+        "cnName": "中国广东广州"
+    },
+    "HGH": {
+        "name": "Hangzhou, China",
+        "cnName": "中国浙江杭州"
+    },
+    "HAN": {
+        "name": "Hanoi, Vietnam",
+        "cnName": "越南河内"
+    },
+    "HNY": {
+        "name": "Hengyang, China",
+        "cnName": "中国湖南衡阳"
+    },
+    "SGN": {
+        "name": "Ho Chi Minh City, Vietnam",
+        "cnName": "越南胡志明市"
+    },
+    "HKG": {
+        "name": "Hong Kong, Hong Kong",
+        "cnName": "香港"
+    },
+    "HYD": {
+        "name": "Hyderabad, India",
+        "cnName": "印度海得拉巴"
+    },
+    "TNA": {
+        "name": "Jinan, China",
+        "cnName": "中国山东济南"
+    },
+    "KHI": {
+        "name": "Karachi, Pakistan",
+        "cnName": "巴基斯坦卡拉奇"
+    },
+    "KTM": {
+        "name": "Kathmandu, Nepal",
+        "cnName": "尼泊尔加德满都"
+    },
+    "KUL": {
+        "name": "Kuala Lumpur, Malaysia",
+        "cnName": "马拉西亚吉隆坡"
+    },
+    "NAY": {
+        "name": "Langfang, China",
+        "cnName": "中国河北廊坊"
+    },
+    "LYA": {
+        "name": "Luoyang, China",
+        "cnName": "中国河南洛阳"
+    },
+    "MFM": {
+        "name": "Macau, Macau",
+        "cnName": "澳门"
+    },
+    "MNL": {
+        "name": "Manila, Philippines",
+        "cnName": "菲律宾马尼拉"
+    },
+    "BOM": {
+        "name": "Mumbai, India",
+        "cnName": "印度孟买"
+    },
+    "NNG": {
+        "name": "Nanning, China",
+        "cnName": "中国广西南宁"
+    },
+    "DEL": {
+        "name": "New Delhi, India",
+        "cnName": "印度新德里"
+    },
+    "KIX": {
+        "name": "Osaka, Japan",
+        "cnName": "日本大阪"
+    },
+    "PNH": {
+        "name": "Phnom Penh, Cambodia",
+        "cnName": "柬埔寨金边"
+    },
+    "TAO": {
+        "name": "Qingdao, China",
+        "cnName": "中国山东青岛"
+    },
+    "ICN": {
+        "name": "Seoul, South Korea",
+        "cnName": "韩国首尔"
+    },
+    "SHA": {
+        "name": "Shanghai, China",
+        "cnName": "中国上海"
+    },
+    "SHE": {
+        "name": "Shenyang, China",
+        "cnName": "中国辽宁沈阳"
+    },
+    "SJW": {
+        "name": "Shijiazhuang, China",
+        "cnName": "中国河北石家庄"
+    },
+    "SIN": {
+        "name": "Singapore, Singapore",
+        "cnName": "新加坡"
+    },
+    "SZV": {
+        "name": "Suzhou, China",
+        "cnName": "中国江苏苏州"
+    },
+    "TPE": {
+        "name": "Taipei, Taiwan",
+        "cnName": "台北"
+    },
+    "TSN": {
+        "name": "Tianjin, China",
+        "cnName": "中国天津"
+    },
+    "NRT": {
+        "name": "Tokyo, Japan",
+        "cnName": "日本东京"
+    },
+    "ULN": {
+        "name": "Ulaanbaatar, Mongolia",
+        "cnName": "蒙古乌兰巴托"
+    },
+    "WUH": {
+        "name": "Wuhan, China",
+        "cnName": "中国湖北武汉"
+    },
+    "WUX": {
+        "name": "Wuxi, China",
+        "cnName": "中国江苏无锡"
+    },
+    "XIY": {
+        "name": "Xi'an, China",
+        "cnName": "中国陕西西安"
+    },
+    "EVN": {
+        "name": "Yerevan, Armenia",
+        "cnName": "亚美尼亚埃里文"
+    },
+    "CGO": {
+        "name": "Zhengzhou, China",
+        "cnName": "中国河南郑州"
+    },
+    "CSX": {
+        "name": "Zuzhou, China",
+        "cnName": "中国湖南株洲"
+    },
+    "BGW": {
+        "name": "Baghdad, Iraq",
+        "cnName": "伊拉克巴格达"
+    },
+    "BEY": {
+        "name": "Beirut, Lebanon",
+        "cnName": "黎巴嫩贝鲁特"
+    },
+    "DOH": {
+        "name": "Doha, Qatar",
+        "cnName": "卡塔尔多哈"
+    },
+    "DXB": {
+        "name": "Dubai, United Arab Emirates",
+        "cnName": "阿联酋迪拜"
+    },
+    "KWI": {
+        "name": "Kuwait City, Kuwait",
+        "cnName": "科威特"
+    },
+    "BAH": {
+        "name": "Manama, Bahrain",
+        "cnName": "巴林麦纳麦"
+    },
+    "MCT": {
+        "name": "Muscat, Oman",
+        "cnName": "阿曼马斯喀特"
+    },
+    "RUH": {
+        "name": "Riyadh, Saudi Arabia",
+        "cnName": "沙特阿拉伯利雅得"
+    },
+    "TLV": {
+        "name": "Tel Aviv, Israel",
+        "cnName": "以色列特拉维夫"
+    },
+    "BOG": {
+        "name": "Bogotá, Colombia",
+        "cnName": "哥伦比亚波哥大"
+    },
+    "EZE": {
+        "name": "Buenos Aires, Argentina",
+        "cnName": "阿哥廷布宜诺斯阿诺斯"
+    },
+    "LIM": {
+        "name": "Lima, Peru",
+        "cnName": "秘鲁利马"
+    },
+    "MDE": {
+        "name": "Medellín, Colombia",
+        "cnName": "哥伦比亚麦德林"
+    },
+    "MEX": {
+        "name": "Mexico City, Mexico",
+        "cnName": "墨西哥墨西哥城"
+    },
+    "PTY": {
+        "name": "Panama City, Panama",
+        "cnName": "巴拿马巴拿马城"
+    },
+    "UIO": {
+        "name": "Quito, Ecuador",
+        "cnName": "厄瓜多尔基多"
+    },
+    "GIG": {
+        "name": "Rio de Janeiro, Brazil",
+        "cnName": "巴西里约热内卢"
+    },
+    "GRU": {
+        "name": "São Paulo, Brazil",
+        "cnName": "巴西圣保罗"
+    },
+    "SCL": {
+        "name": "Valparaíso, Chile",
+        "cnName": "智利瓦尔帕莱索"
+    },
+    "CUR": {
+        "name": "Willemstad, Curaçao",
+        "cnName": "库拉索威廉斯塔德"
+    },
+    "IAD": {
+        "name": "Ashburn, VA, United States",
+        "cnName": "美国弗吉尼亚州阿什本"
+    },
+    "ATL": {
+        "name": "Atlanta, GA, United States",
+        "cnName": "美国佐治亚州亚特兰大"
+    },
+    "BOS": {
+        "name": "Boston, MA, United States",
+        "cnName": "美国马萨诸塞州波士顿"
+    },
+    "YYC": {
+        "name": "Calgary, AB, Canada",
+        "cnName": "加拿大阿尔伯塔卡尔加里"
+    },
+    "CLT": {
+        "name": "Charlotte, NC, United States",
+        "cnName": "美国北卡罗来纳州夏洛特"
+    },
+    "ORD": {
+        "name": "Chicago, IL, United States",
+        "cnName": "美国伊利诺伊州芝加哥"
+    },
+    "DFW": {
+        "name": "Dallas, TX, United States",
+        "cnName": "美国得克萨斯州达拉斯"
+    },
+    "DEN": {
+        "name": "Denver, CO, United States",
+        "cnName": "美国科罗拉多州丹佛"
+    },
+    "DTW": {
+        "name": "Detroit, MI, United States",
+        "cnName": "美国密歇根州底特律"
+    },
+    "IAH": {
+        "name": "Houston, TX, United States",
+        "cnName": "美国得克萨斯州休斯顿"
+    },
+    "IND": {
+        "name": "Indianapolis, IN, United States",
+        "cnName": "美国印第安纳州印第安纳波利斯"
+    },
+    "JAX": {
+        "name": "Jacksonville, FL, United States",
+        "cnName": "美国佛罗里达州杰克逊维尔"
+    },
+    "MCI": {
+        "name": "Kansas City, MO, United States",
+        "cnName": "美国密苏里州堪萨斯"
+    },
+    "LAS": {
+        "name": "Las Vegas, NV, United States",
+        "cnName": "美国内华达州拉斯维加斯"
+    },
+    "LAX": {
+        "name": "Los Angeles, CA, United States",
+        "cnName": "美国加利福尼亚州洛杉矶"
+    },
+    "MFE": {
+        "name": "McAllen, TX, United States",
+        "cnName": "美国得克萨斯州麦卡伦"
+    },
+    "MEM": {
+        "name": "Memphis, TN, United States",
+        "cnName": "美国田纳西州孟菲斯"
+    },
+    "MIA": {
+        "name": "Miami, FL, United States",
+        "cnName": "美国佛罗里达州孟菲斯"
+    },
+    "MSP": {
+        "name": "Minneapolis, MN, United States",
+        "cnName": "美国明尼苏达州明尼阿波利斯"
+    },
+    "MGM": {
+        "name": "Montgomery, AL, United States",
+        "cnName": "美国亚拉巴马州蒙哥马利"
+    },
+    "YUL": {
+        "name": "Montréal, QC, Canada",
+        "cnName": "加拿大魁北克蒙特利尔"
+    },
+    "BNA": {
+        "name": "Nashville, TN, United States",
+        "cnName": "美国田纳西州纳什维尔"
+    },
+    "EWR": {
+        "name": "Newark, NJ, United States",
+        "cnName": "美国新泽西州纽瓦克"
+    },
+    "ORF": {
+        "name": "Norfolk, VA, United States",
+        "cnName": "美国弗吉尼亚州诺福克"
+    },
+    "OMA": {
+        "name": "Omaha, NE, United States",
+        "cnName": "美国内布拉斯加州奥马哈"
+    },
+    "PHX": {
+        "name": "Phoenix, AZ, United States",
+        "cnName": "美国亚利桑那州菲尼克斯"
+    },
+    "PIT": {
+        "name": "Pittsburgh, PA, United States",
+        "cnName": "美国宾夕法尼亚州匹兹堡"
+    },
+    "PDX": {
+        "name": "Portland, OR, United States",
+        "cnName": "美国俄勒冈州波特兰"
+    },
+    "RIC": {
+        "name": "Richmond, Virginia",
+        "cnName": "美国弗吉尼亚州里士满"
+    },
+    "SMF": {
+        "name": "Sacramento, CA, United States",
+        "cnName": "美国加利福尼亚州萨克拉门托"
+    },
+    "SLC": {
+        "name": "Salt Lake City, UT, United States",
+        "cnName": "美国犹他州盐湖城"
+    },
+    "SAN": {
+        "name": "San Diego, CA, United States",
+        "cnName": "美国加利福尼亚州圣地亚哥"
+    },
+    "SJC": {
+        "name": "San Jose, CA, United States",
+        "cnName": "美国加利福尼亚州圣何塞"
+    },
+    "YXE": {
+        "name": "Saskatoon, SK, Canada",
+        "cnName": "加拿大萨斯喀彻温萨卡斯通"
+    },
+    "SEA": {
+        "name": "Seattle, WA, United States",
+        "cnName": "美国华盛顿州西雅图"
+    },
+    "STL": {
+        "name": "St. Louis, MO, United States",
+        "cnName": "美国圣路易斯密苏里州"
+    },
+    "TPA": {
+        "name": "Tampa, FL, United States",
+        "cnName": "美国佛罗里达州坦帕"
+    },
+    "YYZ": {
+        "name": "Toronto, ON, Canada",
+        "cnName": "加拿大安大略多伦多"
+    },
+    "YVR": {
+        "name": "Vancouver, BC, Canada",
+        "cnName": "加拿大不列颠哥伦比亚温哥华"
+    },
+    "TLH": {
+        "name": "Tallahassee, FL, United States",
+        "cnName": "美国佛罗里达州塔拉哈西"
+    },
+    "YWG": {
+        "name": "Winnipeg, MB, Canada",
+        "cnName": "加拿大马尼托巴省省温尼伯"
+    },
+    "AKL": {
+        "name": "Auckland, New Zealand",
+        "cnName": "新西兰奥克兰"
+    },
+    "BNE": {
+        "name": "Brisbane, QLD, Australia",
+        "cnName": "澳大利亚昆士兰州布里斯班"
+    },
+    "MEL": {
+        "name": "Melbourne, VIC, Australia",
+        "cnName": "澳大利亚美多尼亚州墨尔本"
+    },
+    "PER": {
+        "name": "Perth, WA, Australia",
+        "cnName": "澳大利亚西澳大利亚州珀斯"
+    },
+    "SYD": {
+        "name": "Sydney, NSW, Australia",
+        "cnName": "澳大利亚西南威尔士州悉尼"
+    }
+}
