@@ -6,17 +6,97 @@
     <link rel="shortcut icon" type="image/ico" href="https://cdn.jsdelivr.net/npm/skx@0.0.1">
     <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,minimal-ui">
     <title>Cloudflare Data Center - Sukka's Lab</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.7.2/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/suka.css@0.2.1">
     <style>
-        body {
-            padding: 1rem;
-        }
+
     </style>
 </head>
 
 <body>
-    <h1>Cloudflare Data Center</h1>
-    <div id="cfdc-info"></div>
+    <div class="container">
+        <section class="section">
+            <h1 class="sk-text-center title">Cloudflare Data Center</h1>
+            <div class="box sk-center" style="max-width: 500px">
+                <p id="cf-dcinfo" class="sk-pb-4"></p>
+                <div class="field">
+                    <div class="control">
+                        <input id="cfdc-search-input" class="input" type="text" placeholder="Input">
+                        <p class="help">Cloudflare Data Center Code Name</p>
+                    </div>
+                    <p id="cfdc-search-output" class="sk-mt-2"></p>
+                </div>
+            </div>
+        </section>
+    </div>
     <script>
+        const _get = (url) =>
+            fetch(url, {
+                method: 'GET',
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            }).then(resp => Promise.all([resp.ok, resp.status, resp.json(), resp.headers])
+            ).then(([ok, status, json, headers]) => {
+                if (ok) {
+                    let data = {
+                        ok,
+                        status,
+                        data: json,
+                        headers
+                    }
+                    return data;
+                } else {
+                    throw new Error(JSON.stringify(json.error));
+                }
+            }).catch(error => {
+                throw error;
+            });
+
+        let CFDC = {
+            data: [],
+            current: ``,
+            input: document.getElementById('cfdc-search-input'),
+            getData: () => {
+                _get('cfdc.json')
+                    .then(resp => {
+                        CFDC.data = resp.data;
+                        CFDC.current = resp.headers.get('cf-ray').split('-')[1];
+                        CFDC.regListener();
+                        CFDC.showInfo();
+                    })
+            },
+            showInfo: () => {
+                let dcInfo = CFDC.data[CFDC.current];
+                let html = `Your currently have hit: ${CFDC.current}<br>${dcInfo.name}<br>${dcInfo.cnName}`;
+                document.getElementById('cfdc-info').innerHTML = html;
+            },
+            search: () => {
+                if (CFDC.input.value.length === 3) {
+                    let dcInfo = CFDC.data[CFDC.input.value];
+                    if (dcInfo) {
+                        let html = `${CFDC.input.value}<br>${dcInfo.name}<br>${dcInfo.cnName}`;
+                        document.getElementById('cfdc-search-output').innerHTML = html;
+                    } else {
+                        document.getElementById('cfdc-search-output').innerHTML = '';
+                    }
+                } else {
+                    document.getElementById('cfdc-search-output').innerHTML = '';
+                }
+            },
+            regListener: () => {
+                if (CFDC.input.value.length === 3) {
+                    CFDC.search();
+                    CFDC.input.addEventListener('input', CFDC.search);
+                } else {
+                    CFDC.input.addEventListener('input', CFDC.search);
+                }
+            },
+        };
+
+        CFDC.getData();
+    </script>
+    <!--<script>
         const _get = (url) =>
             fetch(url, {
                 method: 'GET',
@@ -65,7 +145,7 @@
         window.ga_api = "https://dt.skk.moe/v2/";
         window.ga_perf_api = "https://dt.skk.moe/v2/"
     </script>
-    <script async src="https://cdn.jsdelivr.net/npm/galib@0.3.7/dist/dt.s.min.js"></script>
+    <script async src="https://cdn.jsdelivr.net/npm/galib@0.3.7/dist/dt.s.min.js"></script>-->
 </body>
 
 </html>
