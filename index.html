@@ -73,9 +73,9 @@
             },
             search: () => {
                 if (CFDC.input.value.length === 3) {
-                    let dcInfo = CFDC.data[CFDC.input.value];
+                    let dcInfo = CFDC.data[CFDC.input.value.toUpperCase()];
                     if (dcInfo) {
-                        let html = `${CFDC.input.value}<br>${dcInfo.name}<br>${dcInfo.cnName}`;
+                        let html = `${CFDC.input.value.toUpperCase()}<br>${dcInfo.name}<br>${dcInfo.cnName}`;
                         document.getElementById('cfdc-search-output').innerHTML = html;
                     } else {
                         document.getElementById('cfdc-search-output').innerHTML = '';
