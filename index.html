@@ -96,56 +96,12 @@
 
         CFDC.getData();
     </script>
-    <!--<script>
-        const _get = (url) =>
-            fetch(url, {
-                method: 'GET',
-                headers: {
-                    'Content-Type': 'application/json'
-                }
-            }).then(resp => Promise.all([resp.ok, resp.status, resp.json(), resp.headers])
-            ).then(([ok, status, json, headers]) => {
-                if (ok) {
-                    let data = {
-                        ok,
-                        status,
-                        data: json,
-                        headers
-                    }
-                    return data;
-                } else {
-                    throw new Error(JSON.stringify(json.error));
-                }
-            }).catch(error => {
-                throw error;
-            });
-
-        let CFDC = {
-            data: [],
-            current: ``,
-            getInfo: () => {
-                _get('cfdc.json')
-                    .then(resp => {
-                        CFDC.data = resp.data;
-                        CFDC.current = resp.headers.get('cf-ray').split('-')[1];
-                        return resp;
-                    })
-                    .then(resp => {
-                        let dcInfo = CFDC.data[CFDC.current];
-                        let html = `${CFDC.current}<br>${dcInfo.name}<br>${dcInfo.cnName}`;
-                        document.getElementById('cfdc-info').innerHTML = html;
-                    })
-            }
-        };
-
-        CFDC.getInfo()
-    </script>
     <script>
         window.ga_tid = "UA-122669675-3";
         window.ga_api = "https://dt.skk.moe/v2/";
         window.ga_perf_api = "https://dt.skk.moe/v2/"
     </script>
-    <script async src="https://cdn.jsdelivr.net/npm/galib@0.3.7/dist/dt.s.min.js"></script>-->
+    <script async src="https://cdn.jsdelivr.net/npm/galib@0.3.7/dist/dt.s.min.js"></script>
 </body>
 
 </html>
