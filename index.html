@@ -61,13 +61,13 @@
                 _get('cfdc.json')
                     .then(resp => {
                         CFDC.data = resp.data;
-                        CFDC.current = resp.headers.get('cf-ray').split('-')[1];
+                        CFDC.current = (resp.headers.get('cf-ray') || '').split('-')[1];
                         CFDC.regListener();
                         CFDC.showInfo();
                     })
             },
             showInfo: () => {
-                let dcInfo = CFDC.data[CFDC.current];
+                let dcInfo = (CFDC.data[CFDC.current] || []);
                 let html = `Your currently have hit: ${CFDC.current}<br>${dcInfo.name}<br>${dcInfo.cnName}`;
                 document.getElementById('cfdc-info').innerHTML = html;
             },
