@@ -55,6 +55,10 @@
         "name": "Frankfurt, Germany",
         "cnName": "德国法兰克福"
     },
+    "GVA": {
+        "name": "Geneva, Switzerland",
+        "cnName": "瑞士日内瓦"
+    },
     "HAM": {
         "name": "Hamburg, Germany",
         "cnName": "德国汉堡"
@@ -268,6 +272,10 @@
         "cnName": "香港"
     },
     "HYD": {
+        "name": "Islamabad, Pakistan",
+        "cnName": "巴基斯坦伊斯兰堡"
+    },
+    "ISB": {
         "name": "Hyderabad, India",
         "cnName": "印度海得拉巴"
     },
@@ -290,6 +298,10 @@
     "NAY": {
         "name": "Langfang, China",
         "cnName": "中国河北廊坊"
+    },
+    "LHE": {
+        "name": "Lahore, Pakistan",
+        "cnName": "巴基斯坦拉合尔"
     },
     "LYA": {
         "name": "Luoyang, China",
@@ -419,6 +431,10 @@
         "name": "Muscat, Oman",
         "cnName": "阿曼马斯喀特"
     },
+    "ZDM": {
+        "name": "Ramallah",
+        "cnName": "巴勒斯坦拉姆安拉"
+    },
     "RUH": {
         "name": "Riyadh, Saudi Arabia",
         "cnName": "沙特阿拉伯利雅得"
@@ -435,6 +451,14 @@
         "name": "Buenos Aires, Argentina",
         "cnName": "阿哥廷布宜诺斯阿诺斯"
     },
+    "CWB": {
+        "name": "Curitiba, Brazil",
+        "cnName": "巴西库里奇巴"
+    },
+    "FOR": {
+        "name": "Fortaleza, Brazil",
+        "cnName": "巴西福塔莱萨"
+    },
     "LIM": {
         "name": "Lima, Peru",
         "cnName": "秘鲁利马"
@@ -450,6 +474,10 @@
     "PTY": {
         "name": "Panama City, Panama",
         "cnName": "巴拿马巴拿马城"
+    },
+    "POA": {
+        "name": "Porto Alegre, Brazil",
+        "cnName": "巴西阿雷格里港"
     },
     "UIO": {
         "name": "Quito, Ecuador",
@@ -470,6 +498,10 @@
     "CUR": {
         "name": "Willemstad, Curaçao",
         "cnName": "库拉索威廉斯塔德"
+    },
+    "AMM": {
+        "name": "Amman, Jordan",
+        "cnName": "约旦安曼"
     },
     "IAD": {
         "name": "Ashburn, VA, United States",
@@ -583,9 +615,13 @@
         "name": "Pittsburgh, PA, United States",
         "cnName": "美国宾夕法尼亚州匹兹堡"
     },
-    "PDX": {
+    "QRO": {
         "name": "Portland, OR, United States",
         "cnName": "美国俄勒冈州波特兰"
+    },
+    "PDX": {
+        "name": "Queretaro, MX, Mexico",
+        "cnName": "墨西哥克雷塔罗州"
     },
     "RIC": {
         "name": "Richmond, Virginia",
