@@ -109,9 +109,9 @@
                 let num = 0;
 
                 for (i of result) {
+                    num++;
                     let x = i.split('@');
                     html += `<tr><td class="sk-text-center">${num}</td><td>${x[0]}</td><td>${x[1]}</td><td>${x[2]}</td></tr>`;
-                    num++;
                 }
 
                 html += `</table>`;
