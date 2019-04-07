@@ -94,29 +94,33 @@
                 }
             },
             searchAny: () => {
-                let keyword = CFDC.inputAny.value.toLowerCase(),
-                    result = [],
-                    html = '';
-                for (i in CFDC.data) {
-                    let x = `${i} ${CFDC.data[i].name.toLowerCase()} ${CFDC.data[i].cnName}`;
-                    if (x.indexOf(keyword) !== -1) {
-                        result.push(`${i}@${CFDC.data[i].name}@${CFDC.data[i].cnName}`)
+                if (CFDC.inputAny.value.length === 0) {
+                    document.getElementById('cfdc-search-any-output').innerHTML = '';
+                } else {
+                    let keyword = CFDC.inputAny.value.toLowerCase(),
+                        result = [],
+                        html = '';
+                    for (i in CFDC.data) {
+                        let x = `${i} ${CFDC.data[i].name.toLowerCase()} ${CFDC.data[i].cnName}`;
+                        if (x.indexOf(keyword) !== -1) {
+                            result.push(`${i}@${CFDC.data[i].name}@${CFDC.data[i].cnName}`)
+                        }
                     }
+
+                    html += '<table class="table is-fullwidth">'
+
+                    let num = 0;
+
+                    for (i of result) {
+                        num++;
+                        let x = i.split('@');
+                        html += `<tr><td class="sk-text-center">${num}</td><td>${x[0]}</td><td>${x[1]}</td><td>${x[2]}</td></tr>`;
+                    }
+
+                    html += `</table>`;
+
+                    document.getElementById('cfdc-search-any-output').innerHTML = `<p>There are ${num} data center(s) match the keyword</p>${html}`;
                 }
-
-                html += '<table class="table is-fullwidth">'
-
-                let num = 0;
-
-                for (i of result) {
-                    num++;
-                    let x = i.split('@');
-                    html += `<tr><td class="sk-text-center">${num}</td><td>${x[0]}</td><td>${x[1]}</td><td>${x[2]}</td></tr>`;
-                }
-
-                html += `</table>`;
-
-                document.getElementById('cfdc-search-any-output').innerHTML = `<p>There are ${num} data center(s) match the keyword</p>${html}`;
             },
             regListener: () => {
                 if (CFDC.input.value.length === 3) {
