@@ -6,7 +6,7 @@
     <link rel="shortcut icon" type="image/ico" href="https://cdn.jsdelivr.net/npm/skx@0.0.1">
     <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,minimal-ui">
     <title>Cloudflare Data Center - Sukka's Lab</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.7.2/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.7.4/css/bulma.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/suka.css@0.2.1">
     <style>
 
@@ -21,10 +21,18 @@
                 <p id="cfdc-info" class="sk-pb-4"></p>
                 <div class="field">
                     <div class="control">
-                        <input id="cfdc-search-input" class="input" type="text" placeholder="Input">
+                        <input id="cfdc-search-input" class="input" type="text" placeholder="Input codename">
                         <p class="help">Cloudflare Data Center Code Name</p>
                     </div>
                     <p id="cfdc-search-output" class="sk-mt-2"></p>
+                </div>
+                <br>
+                <div class="field">
+                    <div class="control">
+                        <input id="cfdc-search-any-input" class="input" type="text" placeholder="Input keyword">
+                        <p class="help">Use keyword to search Cloudflare Data Centers</p>
+                    </div>
+                    <div id="cfdc-search-any-output" class="sk-mt-2"></div>
                 </div>
             </div>
         </section>
@@ -57,6 +65,7 @@
             data: [],
             current: ``,
             input: document.getElementById('cfdc-search-input'),
+            inputAny: document.getElementById('cfdc-search-any-input'),
             getData: () => {
                 _get('cfdc.json')
                     .then(resp => {
@@ -84,6 +93,31 @@
                     document.getElementById('cfdc-search-output').innerHTML = '';
                 }
             },
+            searchAny: () => {
+                let keyword = CFDC.inputAny.value,
+                    result = [],
+                    html = '';
+                for (i in CFDC.data) {
+                    let x = `${i} ${CFDC.data[i].name} ${CFDC.data[i].cnName}`;
+                    if (x.indexOf(keyword) !== -1) {
+                        result.push(`${i}@${CFDC.data[i].name}@${CFDC.data[i].cnName}`)
+                    }
+                }
+
+                html += '<table class="table is-fullwidth">'
+
+                let num = 1;
+
+                for (i of result) {
+                    let x = i.split('@');
+                    html += `<tr><td class="sk-text-center">${num}</td><td>${x[0]}</td><td>${x[1]}</td><td>${x[2]}</td></tr>`;
+                    num++;
+                }
+
+                html += `</table>`;
+
+                document.getElementById('cfdc-search-any-output').innerHTML = `<p>There are ${num} data center(s) match the keyword</p>${html}`;
+            },
             regListener: () => {
                 if (CFDC.input.value.length === 3) {
                     CFDC.search();
@@ -91,6 +125,8 @@
                 } else {
                     CFDC.input.addEventListener('input', CFDC.search);
                 }
+
+                CFDC.inputAny.addEventListener('input', CFDC.searchAny);
             },
         };
 
