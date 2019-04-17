@@ -59,6 +59,10 @@
         "name": "Geneva, Switzerland",
         "cnName": "瑞士日内瓦"
     },
+    "GOT": {
+        "name": "Gothenburg, Sweden",
+        "cnName": "瑞典哥德堡"
+    },
     "HAM": {
         "name": "Hamburg, Germany",
         "cnName": "德国汉堡"
@@ -514,6 +518,10 @@
     "BOS": {
         "name": "Boston, MA, United States",
         "cnName": "美国马萨诸塞州波士顿"
+    },
+    "BUF": {
+        "name": "Buffalo, NY, United States",
+        "cnName": "美国纽约州布法罗"
     },
     "YYC": {
         "name": "Calgary, AB, Canada",
