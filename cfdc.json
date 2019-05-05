@@ -115,6 +115,10 @@
         "name": "Munich, Germany",
         "cnName": "德国慕尼黑"
     },
+    "LCA": {
+        "name": "Nicosia, Cyprus",
+        "cnName": "塞浦路斯尼科西亚"
+    },
     "OSL": {
         "name": "Oslo, Norway",
         "cnName": "挪威奥斯陆"
@@ -410,6 +414,10 @@
     "BGW": {
         "name": "Baghdad, Iraq",
         "cnName": "伊拉克巴格达"
+    },
+    "GYD": {
+        "name": "Baku, Azerbaijan",
+        "cnName": "阿塞拜疆巴库"
     },
     "BEY": {
         "name": "Beirut, Lebanon",
