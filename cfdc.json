@@ -159,6 +159,10 @@
         "name": "Tallinn, Estonia",
         "cnName": "爱沙尼亚塔林"
     },
+    "SKG": {
+        "name": "Thessaloniki, Greece",
+        "cnName": "希腊萨罗尼加"
+    },
     "VIE": {
         "name": "Vienna, Austria",
         "cnName": "奥地利维也纳"
@@ -191,6 +195,10 @@
         "name": "Cape Town, South Africa",
         "cnName": "南非开普敦"
     },
+    "DAR": {
+        "name": "Dar Es Salaam, Tanzania",
+        "cnName": "坦桑尼亚达累斯萨拉姆"
+    },
     "JIB": {
         "name": "Djibouti City, Djibouti",
         "cnName": "吉布提"
@@ -222,6 +230,10 @@
     "RUN": {
         "name": "Réunion, France",
         "cnName": "法属留尼汪岛"
+    },
+    "KGL": {
+        "name": "Kigali, Rwanda",
+        "cnName": "卢旺达基加利"
     },
     "BKK": {
         "name": "Bangkok, Thailand",
@@ -411,6 +423,10 @@
         "name": "Zuzhou, China",
         "cnName": "中国湖南株洲"
     },
+    "ASU": {
+        "name": "Asunción",
+        "cnName": "巴拉圭亚松森"
+    },
     "BGW": {
         "name": "Baghdad, Iraq",
         "cnName": "伊拉克巴格达"
@@ -593,7 +609,7 @@
     },
     "MIA": {
         "name": "Miami, FL, United States",
-        "cnName": "美国佛罗里达州孟菲斯"
+        "cnName": "美国佛罗里达州迈阿密"
     },
     "MSP": {
         "name": "Minneapolis, MN, United States",
