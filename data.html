@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" type="image/ico" href="https://cdn.jsdelivr.net/npm/skx@0.0.1">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,minimal-ui">
+    <title>Cloudflare Data Center - Sukka's Lab</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.7.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/suka.css@0.2.1">
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <section class="section sk-text-center">
+            <h1 class="title">Cloudflare Data Center</h1>
+            <p><strong>cfdc.json has those datacenters that cloudflare statuspages don't have:</strong></p>
+            <p id="cfdc-cf"></p>
+            <p><strong>cloudflare statuspages has those datacenters that cfdc.json don't have:</strong></p>
+            <p id="cf-cfdc"></p>
+            <p></p>
+        </section>
+    </div>
+    <script>
+        const arrayItemDel = (array, value) => {
+            let index = array.indexOf(value);
+            if (index > -1) {
+                array.splice(index, 1);
+            }
+        }
+
+        const _getJson = (url) =>
+            fetch(url, {
+                method: 'GET',
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            }).then(resp => Promise.all([resp.ok, resp.status, resp.json(), resp.headers])
+            ).then(([ok, status, json, headers]) => {
+                if (ok) {
+                    let data = {
+                        ok,
+                        status,
+                        data: json,
+                        headers
+                    }
+                    return data;
+                } else {
+                    throw new Error(JSON.stringify(json.error));
+                }
+            }).catch(error => {
+                throw error;
+            }),
+            _getTxt = (url) =>
+                fetch(url, {
+                    method: 'GET',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    }
+                }).then(resp => Promise.all([resp.ok, resp.status, resp.text(), resp.headers])
+                ).then(([ok, status, json, headers]) => {
+                    if (ok) {
+                        let data = {
+                            ok,
+                            status,
+                            data: json,
+                            headers
+                        }
+                        return data;
+                    } else {
+                        throw new Error(JSON.stringify(json.error));
+                    }
+                }).catch(error => {
+                    throw error;
+                });
+
+        let CFDC = {
+            data: [],
+            cfdata: [],
+            compare: () => {
+                _getJson('cfdc.json')
+                    .then(resp => {
+                        for (let i in resp.data) {
+                            CFDC.data.push(i);
+                        }
+                    }).then(() => {
+                        _getTxt('https://www.cloudflarestatus.com/index.html')
+                            .then(resp => {
+                                let container = document.createElement('div');
+                                //container.setAttribute('style', 'display: none');
+                                container.innerHTML = resp.data;
+                                let $itemList = container.querySelectorAll('.component-inner-container .name');
+                                let List = [];
+                                for (let i of $itemList) {
+                                    if (i.innerHTML.indexOf(' - (') > -1) {
+                                        List.push(i.innerHTML.replace(/(.*) - \((.*)\)/, '$2').trim());
+                                    }
+                                }
+                                CFDC.cfdata = List;
+                            }).then(() => {
+                                let data = JSON.parse(JSON.stringify(CFDC.data))
+                                let cfdata = JSON.parse(JSON.stringify(CFDC.cfdata));
+
+                                for (let i in CFDC.data) {
+                                    for (let j in CFDC.cfdata) {
+                                        if (CFDC.data[i] === CFDC.cfdata[j]) {
+                                            arrayItemDel(cfdata, CFDC.cfdata[j]);
+                                            break;
+                                        }
+                                    }
+                                }
+                                for (let k in CFDC.cfdata) {
+                                    for (let l in CFDC.data) {
+                                        if (CFDC.cfdata[k] === CFDC.data[l]) {
+                                            arrayItemDel(data, CFDC.data[l]);
+                                            break;
+                                        }
+                                    }
+                                }
+
+                                document.getElementById('cfdc-cf').innerHTML = data;
+                                document.getElementById('cf-cfdc').innerHTML = cfdata;
+                            })
+                    })
+            }
+        }
+        CFDC.compare();
+
+    </script>
+</body>
+
+</html>
