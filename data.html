@@ -17,9 +17,7 @@
     <div class="container">
         <section class="section sk-text-center">
             <h1 class="title">Cloudflare Data Center</h1>
-            <p><strong>cfdc.json has those datacenters that cloudflare statuspages don't have:</strong></p>
             <p id="cfdc-cf"></p>
-            <p><strong>cloudflare statuspages has those datacenters that cfdc.json don't have:</strong></p>
             <p id="cf-cfdc"></p>
             <p></p>
         </section>
@@ -121,8 +119,8 @@
                                     }
                                 }
 
-                                document.getElementById('cfdc-cf').innerHTML = data;
-                                document.getElementById('cf-cfdc').innerHTML = cfdata;
+                                document.getElementById('cfdc-cf').innerHTML = '<strong>cfdc.json has those datacenters that cloudflare statuspages don't have:</strong><br>' + data;
+                                document.getElementById('cf-cfdc').innerHTML = '<strong>cloudflare statuspages has those datacenters that cfdc.json don't have:</strong><br>' + cfdata;
                             })
                     })
             }
