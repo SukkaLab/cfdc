@@ -119,8 +119,8 @@
                                     }
                                 }
 
-                                document.getElementById('cfdc-cf').innerHTML = '<strong>cfdc.json has those datacenters that cloudflare statuspages don't have:</strong><br>' + data;
-                                document.getElementById('cf-cfdc').innerHTML = '<strong>cloudflare statuspages has those datacenters that cfdc.json don't have:</strong><br>' + cfdata;
+                                document.getElementById('cfdc-cf').innerHTML = `<strong>cfdc.json has those datacenters that cloudflare statuspages don't have:</strong><br>${data}`;
+                                document.getElementById('cf-cfdc').innerHTML = `<strong>cloudflare statuspages has those datacenters that cfdc.json don't have:</strong><br>${cfdata}`;
                             })
                     })
             }
