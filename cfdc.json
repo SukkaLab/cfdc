@@ -738,49 +738,5 @@
     "SYD": {
         "name": "Sydney, NSW, Australia",
         "cnName": "澳大利亚西南威尔士州悉尼"
-    },
-    "102": {
-        "name": "Shijiazhuang, China",
-        "cnName": "中国河北石家庄"
-    },
-    "111": {
-        "name": "Ningbo, China",
-        "cnName": "中国浙江宁波"
-    },
-    "106": {
-        "name": "Qingdao, China",
-        "cnName": "中国山东青岛"
-    },
-    "103": {
-        "name": "Chongqin, China",
-        "cnName": "中国重庆"
-    },
-    "100": {
-        "name": "Huangshi, China",
-        "cnName": "中国湖北黄石"
-    },
-    "110": {
-        "name": "Hefei, China",
-        "cnName": "中国安徽合肥"
-    },
-    "108": {
-        "name": "Foshan, China",
-        "cnName": "中国广东佛山"
-    },
-    "107": {
-        "name": "Hangzhou, China",
-        "cnName": "中国浙江杭州"
-    },
-    "101": {
-        "name": "Shanghai, China",
-        "cnName": "中国上海"
-    },
-    "109": {
-        "name": "Wuxi, China",
-        "cnName": "中国江苏无锡"
-    },
-    "104": {
-        "name": "Fuzhou, China",
-        "cnName": "中国福建福州"
     }
 }
