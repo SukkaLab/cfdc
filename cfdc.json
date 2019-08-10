@@ -343,6 +343,10 @@
         "name": "Mumbai, India",
         "cnName": "印度孟买"
     },
+    "NAG": {
+        "name": "Nagpur, India",
+        "cnName": "印度那格浦尔"
+    },
     "NNG": {
         "name": "Nanning, China",
         "cnName": "中国广西南宁"
@@ -646,6 +650,10 @@
     "OMA": {
         "name": "Omaha, NE, United States",
         "cnName": "美国内布拉斯加州奥马哈"
+    },
+    "PHL": {
+        "name": "Philadelphia, PA, United States",
+        "cnName": "美国宾夕法尼亚州费城"
     },
     "PHX": {
         "name": "Phoenix, AZ, United States",
