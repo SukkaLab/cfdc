@@ -121,10 +121,7 @@
 
         const _getJson = (url) =>
             fetch(url, {
-                method: 'GET',
-                headers: {
-                    'Content-Type': 'application/json'
-                }
+                method: 'GET'
             }).then(resp => Promise.all([resp.ok, resp.status, resp.json(), resp.headers])
             ).then(([ok, status, json, headers]) => {
                 if (ok) {
@@ -143,10 +140,7 @@
             }),
             _getTxt = (url) =>
                 fetch(url, {
-                    method: 'GET',
-                    headers: {
-                        'Content-Type': 'application/json'
-                    }
+                    method: 'GET'
                 }).then(resp => Promise.all([resp.ok, resp.status, resp.text(), resp.headers])
                 ).then(([ok, status, json, headers]) => {
                     if (ok) {
