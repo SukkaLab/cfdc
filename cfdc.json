@@ -315,6 +315,10 @@
         "name": "Jinan, China",
         "cnName": "中国山东济南"
     },
+    "CGK": {
+        "name": "Jakarta, Indonesia",
+        "cnName": "印度尼西亚雅加达"
+    },
     "KHI": {
         "name": "Karachi, Pakistan",
         "cnName": "巴基斯坦卡拉奇"
@@ -346,6 +350,10 @@
     "MFM": {
         "name": "Macau, Macau",
         "cnName": "澳门"
+    },
+    "MLE": {
+        "name": "Malé, Maldives",
+        "cnName": "马尔代夫马累"
     },
     "MNL": {
         "name": "Manila, Philippines",
