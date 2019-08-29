@@ -176,8 +176,8 @@
                                 let $itemList = container.querySelectorAll('.component-inner-container .name');
                                 let List = [];
                                 for (let i of $itemList) {
-                                    if (i.innerHTML.indexOf(' - (') > -1) {
-                                        List.push(i.innerHTML.replace(/(.*) - \((.*)\)/, '$2').trim());
+                                    if (/.*?-.*?\((.*?)\)/g.test(i.innerHTML)) {
+                                        List.push(/.*?-.*?\((.*?)\)/g.exec(i.innerHTML)['1'].trim());
                                     }
                                 }
                                 CFDC.cfdata = List;
