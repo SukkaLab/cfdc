@@ -455,6 +455,10 @@
         "name": "Ulaanbaatar, Mongolia",
         "cnName": "蒙古乌兰巴托"
     },
+    "VTE": {
+        "name": "Vientiane, Laos",
+        "cnName": "老挝永珍"
+    },
     "WUH": {
         "name": "Wuhan, China",
         "cnName": "中国湖北武汉"
@@ -590,6 +594,10 @@
     "GND": {
         "name": "St. George's, Grenada",
         "cnName": "格林纳达圣乔治"
+    },
+    "TGU": {
+        "name": "Tegucigalpa, Honduras",
+        "cnName": "洪都拉斯特古西加尔巴"
     },
     "AMM": {
         "name": "Amman, Jordan",
