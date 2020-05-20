@@ -191,10 +191,6 @@
         "name": "Antananarivo, Madagascar",
         "cnName": "马达加斯加安塔那那利佛"
     },
-    "CAI": {
-        "name": "Cairo, Egypt",
-        "cnName": "埃及开罗"
-    },
     "CMN": {
         "name": "Casablanca, Morocco",
         "cnName": "摩洛哥卡萨布兰卡"
@@ -202,6 +198,10 @@
     "CPT": {
         "name": "Cape Town, South Africa",
         "cnName": "南非开普敦"
+    },
+    "DKR": {
+        "name": "Dakar, Senegal",
+        "cnName": "塞内加尔达喀尔"
     },
     "DAR": {
         "name": "Dar Es Salaam, Tanzania",
@@ -234,6 +234,10 @@
     "MBA": {
         "name": "Mombasa, Kenya",
         "cnName": "肯尼亚蒙巴萨"
+    },
+    "ROB": {
+        "name": "Monrovia, Liberia",
+        "cnName": "利比里亚蒙罗维亚"
     },
     "MRU": {
         "name": "Port Louis, Mauritius",
@@ -335,6 +339,10 @@
         "name": "Jinan, China",
         "cnName": "中国山东济南"
     },
+    "JHB": {
+        "name": "Johor Bahru, Malaysia",
+        "cnName": "马拉西亚新山"
+    },
     "CGK": {
         "name": "Jakarta, Indonesia",
         "cnName": "印度尼西亚雅加达"
@@ -394,6 +402,10 @@
     "DEL": {
         "name": "New Delhi, India",
         "cnName": "印度新德里"
+    },
+    "NBG": {
+        "name": "Ningbo, China",
+        "cnName": "中国浙江宁波"
     },
     "NOU": {
         "name": "Noumea, New caledonia",
@@ -566,6 +578,10 @@
     "PTY": {
         "name": "Panama City, Panama",
         "cnName": "巴拿马巴拿马城"
+    },
+    "PBM": {
+        "name": "Paramaribo, Suriname",
+        "cnName": "苏里南帕拉马里博"
     },
     "POA": {
         "name": "Porto Alegre, Brazil",
