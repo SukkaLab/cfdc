@@ -599,9 +599,17 @@
         "name": "São Paulo, Brazil",
         "cnName": "巴西圣保罗"
     },
+    "SSA": {
+        "name": "Salvador, Brazil",
+        "cnName": "巴西萨尔瓦多"
+    },
     "SCL": {
         "name": "Valparaíso, Chile",
         "cnName": "智利瓦尔帕莱索"
+    },
+    "SJO": {
+        "name": "San José, Costa Rica",
+        "cnName": "哥斯达黎加圣荷西"
     },
     "CUR": {
         "name": "Willemstad, Curaçao",
