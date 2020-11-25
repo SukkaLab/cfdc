@@ -8,8 +8,9 @@
     <title>Cloudflare Data Center - Sukka's Lab</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.7.4/css/bulma.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/suka.css@0.2.1">
-    <link rel="preload" as="fetch" crossorigin href="https://lab.skk.moe/cfdc/cfdc.json">
+    <link rel="preload" as="fetch" crossorigin href="/cfdc.json">
     <link rel="preload" as="fetch" crossorigin href="https://www.cloudflarestatus.com/index.html">
+    <link rel="preload" as="fetch" crossorigin href="https://speed.cloudflare.com/locations">
     <link rel="preload" as="fetch" crossorigin href="https://cors-anywhere.herokuapp.com/https://www.cloudflare.com/data/current-pops.csv">
 </head>
 
@@ -161,56 +162,61 @@
         let CFDC = {
             data: [],
             cfdata: [],
-            compare: () => {
-                _getJson('cfdc.json')
-                    .then(resp => {
-                        for (let i in resp.data) {
-                            CFDC.data.push(i);
+            cfdataObj: {},
+            compare: async () => {
+                for (let i in (await _getJson('/cfdc.json')).data) {
+                    CFDC.data.push(i);
+                }
+
+                let container = document.createElement('div');
+                //container.setAttribute('style', 'display: none');
+                container.innerHTML = (await _getTxt('https://www.cloudflarestatus.com/index.html')).data;
+                let $itemList = container.querySelectorAll('.component-inner-container .name');
+                let List = [];
+                for (let i of $itemList) {
+                    if (/([a-zA-Z,\s]+)\s-\s\(([A-Z]+)\)/g.test(i.innerHTML)) {
+                        const matches = /([a-zA-Z,\s]+)\s-\s\(([A-Z]+)\)/g.exec(i.innerHTML);
+                        List.push(matches[2].trim());
+                        CFDC.cfdataObj[matches[2].trim()] = matches[1].trim();
+                    }
+                }
+                CFDC.cfdata = List;
+
+                document.getElementById('cfdc-num').innerHTML = `<strong>cfdc.json:</strong> ${CFDC.data.length} | <strong>Cloudflare Statuspage:</strong> ${CFDC.cfdata.length} | <strong>Cloudflare Network Map:</strong> ${csv2array((await _getTxt('https://cors-anywhere.herokuapp.com/https://www.cloudflare.com/data/current-pops.csv')).data).length} | <strong>Cloudflare Speedtest:</strong> ${(await _getJson('https://speed.cloudflare.com/locations')).data.length}`;
+
+                let data = JSON.parse(JSON.stringify(CFDC.data))
+                let cfdata = JSON.parse(JSON.stringify(CFDC.cfdata));
+
+                for (let i in CFDC.data) {
+                    for (let j in CFDC.cfdata) {
+                        if (CFDC.data[i] === CFDC.cfdata[j]) {
+                            arrayItemDel(cfdata, CFDC.cfdata[j]);
+                            break;
                         }
-                    }).then(() => {
-                        _getTxt('https://www.cloudflarestatus.com/index.html')
-                            .then(resp => {
-                                let container = document.createElement('div');
-                                //container.setAttribute('style', 'display: none');
-                                container.innerHTML = resp.data;
-                                let $itemList = container.querySelectorAll('.component-inner-container .name');
-                                let List = [];
-                                for (let i of $itemList) {
-                                    if (/.*?-.*?\((.*?)\)/g.test(i.innerHTML)) {
-                                        List.push(/.*?-.*?\((.*?)\)/g.exec(i.innerHTML)['1'].trim());
-                                    }
-                                }
-                                CFDC.cfdata = List;
-                            }).then(() => {
-                                _getTxt('https://cors-anywhere.herokuapp.com/https://www.cloudflare.com/data/current-pops.csv')
-                                    .then((resp) => {
-                                        document.getElementById('cfdc-num').innerHTML = `<strong>cfdc.json:</strong> ${CFDC.data.length} | <strong>Cloudflare Statuspage:</strong> ${CFDC.cfdata.length} | <strong>Cloudflare Network Map:</strong> ${csv2array(resp.data).length}`;
-                                    })
+                    }
+                }
+                for (let k in CFDC.cfdata) {
+                    for (let l in CFDC.data) {
+                        if (CFDC.cfdata[k] === CFDC.data[l]) {
+                            arrayItemDel(data, CFDC.data[l]);
+                            break;
+                        }
+                    }
+                }
 
-                                let data = JSON.parse(JSON.stringify(CFDC.data))
-                                let cfdata = JSON.parse(JSON.stringify(CFDC.cfdata));
+                const preData = {};
+                cfdata.forEach(i => {
+                    preData[i] = {};
+                    preData[i].name = CFDC.cfdataObj[i];
+                    preData[i].cnName = 'null';
+                });
 
-                                for (let i in CFDC.data) {
-                                    for (let j in CFDC.cfdata) {
-                                        if (CFDC.data[i] === CFDC.cfdata[j]) {
-                                            arrayItemDel(cfdata, CFDC.cfdata[j]);
-                                            break;
-                                        }
-                                    }
-                                }
-                                for (let k in CFDC.cfdata) {
-                                    for (let l in CFDC.data) {
-                                        if (CFDC.cfdata[k] === CFDC.data[l]) {
-                                            arrayItemDel(data, CFDC.data[l]);
-                                            break;
-                                        }
-                                    }
-                                }
+                console.log(preData);
 
-                                document.getElementById('cfdc-cf').innerHTML = `<strong>cfdc.json has those datacenters that cloudflare statuspages don't have:</strong><br>${data}`;
-                                document.getElementById('cf-cfdc').innerHTML = `<strong>cloudflare statuspages has those datacenters that cfdc.json don't have:</strong><br>${cfdata}`;
-                            })
-                    })
+                document.getElementById('cfdc-cf').innerHTML = `<strong>cfdc.json has those datacenters that cloudflare statuspages don't have:</strong><br>${data}`;
+                document.getElementById('cf-cfdc').innerHTML = `<strong>cloudflare statuspages has those datacenters that cfdc.json don't have:</strong><br>${cfdata}<br><pre style="text-align: left">${JSON.stringify(preData, null, 4)}</pre>`;
+
+                console.log(CFDC);
             }
         }
         CFDC.compare();
