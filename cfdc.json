@@ -842,5 +842,21 @@
     "SYD": {
         "name": "Sydney, NSW, Australia",
         "cnName": "澳大利亚西南威尔士州悉尼"
+    },
+    "NBO": {
+        "name": "Nairobi, Kenya",
+        "cnName": "肯尼亚内罗毕"
+    },
+    "JSR": {
+        "name": "Jashore, Bangladesh",
+        "cnName": "孟加拉国杰索尔"
+    },
+    "RGN": {
+        "name": "Yangon, Myanmar",
+        "cnName": "缅甸仰光"
+    },
+    "TBS": {
+        "name": "Tbilisi, Georgia",
+        "cnName": "格鲁吉亚第比利斯"
     }
 }
