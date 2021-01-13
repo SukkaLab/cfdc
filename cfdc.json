@@ -858,5 +858,11 @@
     "TBS": {
         "name": "Tbilisi, Georgia",
         "cnName": "格鲁吉亚第比利斯"
+    },
+    {
+    "VCP": {
+        "name": "Campinas, Brazil",
+        "cnName": "巴西圣保罗坎皮纳斯"
     }
+}
 }
