@@ -862,5 +862,19 @@
     "VCP": {
         "name": "Campinas, Brazil",
         "cnName": "巴西圣保罗坎皮纳斯"
+    },
+    {
+    "TUN": {
+        "name": "Tunis, Tunisia",
+        "cnName": "突尼斯"
+    },
+    "PMO": {
+        "name": "Palermo, Italy",
+        "cnName": "意大利巴勒莫"
+    },
+    "CBR": {
+        "name": "Canberra, ACT, Australia",
+        "cnName": "澳大利亚堪培拉"
     }
+}
 }
