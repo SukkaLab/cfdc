@@ -863,7 +863,6 @@
         "name": "Campinas, Brazil",
         "cnName": "巴西圣保罗坎皮纳斯"
     },
-    {
     "TUN": {
         "name": "Tunis, Tunisia",
         "cnName": "突尼斯"
@@ -876,5 +875,4 @@
         "name": "Canberra, ACT, Australia",
         "cnName": "澳大利亚堪培拉"
     }
-}
 }
