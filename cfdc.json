@@ -39,10 +39,6 @@
         "name": "Copenhagen, Denmark",
         "cnName": "丹麦哥本哈根"
     },
-    "ORK": {
-        "name": "Cork, Ireland",
-        "cnName": "爱尔兰科克"
-    },
     "DUB": {
         "name": "Dublin, Ireland",
         "cnName": "爱尔兰都柏林"
@@ -295,29 +291,13 @@
         "name": "Dongguan, China",
         "cnName": "中国广东东莞"
     },
-    "FUO": {
-        "name": "Foshan, China",
-        "cnName": "中国广东佛山"
-    },
-    "FOC": {
-        "name": "Fuzhou, China",
-        "cnName": "中国福建福州"
-    },
     "CAN": {
         "name": "Guangzhou, China",
         "cnName": "中国广东广州"
     },
-    "HGH": {
-        "name": "Hangzhou, China",
-        "cnName": "中国浙江杭州"
-    },
     "HAN": {
         "name": "Hanoi, Vietnam",
         "cnName": "越南河内"
-    },
-    "HNY": {
-        "name": "Hengyang, China",
-        "cnName": "中国湖南衡阳"
     },
     "SGN": {
         "name": "Ho Chi Minh City, Vietnam",
@@ -339,10 +319,6 @@
         "name": "Jinan, China",
         "cnName": "中国山东济南"
     },
-    "JHB": {
-        "name": "Johor Bahru, Malaysia",
-        "cnName": "马拉西亚新山"
-    },
     "CGK": {
         "name": "Jakarta, Indonesia",
         "cnName": "印度尼西亚雅加达"
@@ -363,17 +339,9 @@
         "name": "Kuala Lumpur, Malaysia",
         "cnName": "马拉西亚吉隆坡"
     },
-    "NAY": {
-        "name": "Langfang, China",
-        "cnName": "中国河北廊坊"
-    },
     "LHE": {
         "name": "Lahore, Pakistan",
         "cnName": "巴基斯坦拉合尔"
-    },
-    "LYA": {
-        "name": "Luoyang, China",
-        "cnName": "中国河南洛阳"
     },
     "MFM": {
         "name": "Macau, Macau",
@@ -395,10 +363,6 @@
         "name": "Nagpur, India",
         "cnName": "印度那格浦尔"
     },
-    "NNG": {
-        "name": "Nanning, China",
-        "cnName": "中国广西南宁"
-    },
     "DEL": {
         "name": "New Delhi, India",
         "cnName": "印度新德里"
@@ -419,10 +383,6 @@
         "name": "Phnom Penh, Cambodia",
         "cnName": "柬埔寨金边"
     },
-    "TAO": {
-        "name": "Qingdao, China",
-        "cnName": "中国山东青岛"
-    },
     "ICN": {
         "name": "Seoul, South Korea",
         "cnName": "韩国首尔"
@@ -430,10 +390,6 @@
     "SHA": {
         "name": "Shanghai, China",
         "cnName": "中国上海"
-    },
-    "SHE": {
-        "name": "Shenyang, China",
-        "cnName": "中国辽宁沈阳"
     },
     "SJW": {
         "name": "Shijiazhuang, China",
