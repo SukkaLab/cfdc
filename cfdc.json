@@ -287,10 +287,6 @@
         "name": "Dhaka, Bangladesh",
         "cnName": "孟加拉国达卡"
     },
-    "SZX": {
-        "name": "Dongguan, China",
-        "cnName": "中国广东东莞"
-    },
     "CAN": {
         "name": "Guangzhou, China",
         "cnName": "中国广东广州"
@@ -390,10 +386,6 @@
     "SHA": {
         "name": "Shanghai, China",
         "cnName": "中国上海"
-    },
-    "SJW": {
-        "name": "Shijiazhuang, China",
-        "cnName": "中国河北石家庄"
     },
     "SIN": {
         "name": "Singapore, Singapore",
@@ -834,5 +826,57 @@
     "BSB": {
         "name": "Brasilia, Brazil",
         "cnName": "巴西巴西利亚"
+    },
+    "ALG": {
+        "name": "Algiers, Algeria",
+        "cnName": "阿尔及利亚阿尔及尔"
+    },
+    "URT": {
+        "name": "Surat Thani, Thailand",
+        "cnName": "泰国素叻他尼"
+    },
+    "QWJ": {
+        "name": "Americana, Brazil",
+        "cnName": "巴西亚美利加纳"
+    },
+    "BEL": {
+        "name": "Belém, Brazil",
+        "cnName": "巴西贝伦"
+    },
+    "CNF": {
+        "name": "Belo Horizonte, Brazil",
+        "cnName": "巴西贝洛哈里桑塔"
+    },
+    "BNU": {
+        "name": "Blumenau, Brazil",
+        "cnName": "巴西布卢梅瑙"
+    },
+    "CFC": {
+        "name": "Caçador, Brazil",
+        "cnName": "巴西卡萨多尔"
+    },
+    "FLN": {
+        "name": "Florianopolis, Brazil",
+        "cnName": "巴西弗洛里亚诺波利斯"
+    },
+    "GYE": {
+        "name": "Guayaquil, Ecuador",
+        "cnName": "厄瓜多尔瓜亚基尔"
+    },
+    "ITJ": {
+        "name": "Itajaí, Brazil",
+        "cnName": "巴西伊塔雅伊"
+    },
+    "RAO": {
+        "name": "Ribeirao Preto, Brazil",
+        "cnName": "巴西里贝朗普雷图"
+    },
+    "SOD": {
+        "name": "Sorocaba, Brazil",
+        "cnName": "巴西索罗卡巴"
+    },
+    "DMM": {
+        "name": "Dammam, Saudi Arabia",
+        "cnName": "沙特阿拉伯达曼"
     }
 }
