@@ -830,5 +830,9 @@
     "CBR": {
         "name": "Canberra, ACT, Australia",
         "cnName": "澳大利亚堪培拉"
+    },
+    "BSB": {
+        "name": "Brasilia, Brazil",
+        "cnName": "巴西巴西利亚"
     }
 }
