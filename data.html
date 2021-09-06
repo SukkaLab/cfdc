@@ -11,7 +11,7 @@
     <link rel="preload" as="fetch" crossorigin href="./cfdc.json">
     <link rel="preload" as="fetch" crossorigin href="https://www.cloudflarestatus.com/index.html">
     <link rel="preload" as="fetch" crossorigin href="https://speed.cloudflare.com/locations">
-    <link rel="preload" as="fetch" crossorigin href="https://cors-anywhere.herokuapp.com/https://www.cloudflare.com/data/current-pops.csv">
+    <link rel="preload" as="fetch" crossorigin href="https://cors.bridged.cc/https://www.cloudflare.com/data/current-pops.csv">
 </head>
 
 <body>
@@ -182,7 +182,7 @@
                 }
                 CFDC.cfdata = List;
 
-                document.getElementById('cfdc-num').innerHTML = `<strong>cfdc.json:</strong> ${CFDC.data.length} | <strong>Cloudflare Statuspage:</strong> ${CFDC.cfdata.length} | <strong>Cloudflare Network Map:</strong> ${csv2array((await _getTxt('https://cors-anywhere.herokuapp.com/https://www.cloudflare.com/data/current-pops.csv')).data).length} | <strong>Cloudflare Speedtest:</strong> ${(await _getJson('https://speed.cloudflare.com/locations')).data.length}`;
+                document.getElementById('cfdc-num').innerHTML = `<strong>cfdc.json:</strong> ${CFDC.data.length} | <strong>Cloudflare Statuspage:</strong> ${CFDC.cfdata.length} | <strong>Cloudflare Network Map:</strong> ${csv2array((await _getTxt('https://cors.bridged.cc/https://www.cloudflare.com/data/current-pops.csv')).data).length} | <strong>Cloudflare Speedtest:</strong> ${(await _getJson('https://speed.cloudflare.com/locations')).data.length}`;
 
                 let data = JSON.parse(JSON.stringify(CFDC.data))
                 let cfdata = JSON.parse(JSON.stringify(CFDC.cfdata));
