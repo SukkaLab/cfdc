@@ -878,5 +878,21 @@
     "DMM": {
         "name": "Dammam, Saudi Arabia",
         "cnName": "沙特阿拉伯达曼"
+    },
+    "HRE": {
+        "name": "Harare, Zimbabwe",
+        "cnName": "津巴布韦哈拉雷"
+    },
+    "KJA": {
+        "name": "Krasnoyarsk, Russia",
+        "cnName": "俄罗斯克拉斯诺亚尔斯克"
+    },
+    "SVX": {
+        "name": "Yekaterinburg, Russia",
+        "cnName": "俄罗斯叶卡捷琳堡"
+    },
+    "SJP": {
+        "name": "do Rio Preto, Brazil",
+        "cnName": "巴西普雷图河畔圣若泽"
     }
 }
